@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catlean — Лучшие читы для Minecraft 1.21.11</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: white;
+            background: linear-gradient(135deg, #1a0033 0%, #0a0a0a 50%, #2d004d 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            line-height: 1.7;
+            margin: 0;
+        }
+        @keyframes gradientShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+
+        header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            padding: 1.2rem 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(12px);
+            background: rgba(10,10,10,0.75);
+            border-bottom: 1px solid rgba(159,75,255,0.3);
+            z-index: 1000;
+        }
+        .logo { font-size: 2rem; font-weight: 700; background: linear-gradient(90deg, #9f4bff, #ff7aff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .hero h1 { font-size: 5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.5rem; max-width: 800px; margin: 0 auto 2.5rem; opacity: 0.9; }
+
+        .btn {
+            background: linear-gradient(90deg, #9f4bff, #c084fc);
+            color: white;
+            padding: 16px 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.4s;
+            box-shadow: 0 10px 35px rgba(159,75,255,0.4);
+        }
+        .btn:hover { transform: scale(1.08); box-shadow: 0 15px 45px rgba(159,75,255,0.6); }
+
+        section { padding: 110px 6%; }
+        h2 { 
+            text-align: center; 
+            font-size: 3.2rem; 
+            margin-bottom: 4rem; 
+            background: linear-gradient(90deg, #9f4bff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .features {
+            background: rgba(20, 10, 45, 0.6);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(40, 15, 70, 0.7);
+            border-radius: 20px;
+            padding: 2.2rem;
+            border: 1px solid rgba(159,75,255,0.3);
+            transition: all 0.4s;
+        }
+        .feature-card:hover {
+            transform: translateY(-12px);
+            border-color: #9f4bff;
+            box-shadow: 0 20px 40px rgba(159,75,255,0.3);
+        }
+        .feature-card h3 {
+            font-size: 1.65rem;
+            color: #c084fc;
+            margin-bottom: 1rem;
+        }
+
+        .servers {
+            background: rgba(15, 5, 35, 0.7);
+        }
+
+        .download-section {
+            text-align: center;
+            background: linear-gradient(135deg, #2d004d, #0a0a0a);
+        }
+        .download-btn {
+            background: linear-gradient(90deg, #9f4bff, #e879f9);
+            padding: 22px 70px;
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: #9f4bff;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(159,75,255,0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CATLEAN</div>
+        <button class="btn" style="padding:10px 28px; font-size:1rem;" onclick="scrollToTop()">В начало ↑</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>Catlean</h1>
+            <p>Мощный чит-клиент для Minecraft 1.21.11 Fabric</p>
+            <p style="font-size:1.2rem; opacity:0.85;">Стабильность • Удобство • Невидимость</p>
+            <button class="btn" onclick="document.getElementById('download-section').scrollIntoView({behavior:'smooth'})">
+                Скачать Catlean
+            </button>
+        </div>
+    </section>
+
+    <!-- ГЛАВНЫЙ ФУНКЦИОНАЛ -->
+    <section class="features" id="features">
+        <h2>Главный функционал Catlean</h2>
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>⚔️ Combat</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li><strong>Mace Killer</strong> — мощный автоматический килл с помощью булавы</li>
+                    <li>KillAura (с настройкой FOV, Range, Target)</li>
+                    <li>AutoCrystal (Place + Break)</li>
+                    <li>Critical Hits + AutoCrit</li>
+                    <li>AutoTotem + AutoGap + AutoShield</li>
+                    <li>Reach, Velocity, Hitbox, TriggerBot</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>✈️ Movement</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li>Flight (Creative + Survival modes)</li>
+                    <li>Speed + LongJump + HighJump</li>
+                    <li>Spider, ElytraBoost, NoFall</li>
+                    <li>Jesus, Phase, FastClimb</li>
+                    <li>AutoSprint + SafeWalk</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🛠️ World / Player</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li>Scaffold (с автоповоротом и Tower)</li>
+                    <li>FastPlace + FastBreak + NoDelay</li>
+                    <li>X-Ray + FullBright + NightVision</li>
+                    <li>ESP (игроки, мобы, предметы, хранилища)</li>
+                    <li>Tracers + Nametags + StorageESP</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🤖 Automation</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li>AutoFarm + AutoMine</li>
+                    <li>AutoSteal + ChestStealer</li>
+                    <li>AutoEat + AutoSoup</li>
+                    <li>AntiAFK + AutoFish</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎨 Render / Visual</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li>Красивый ClickGUI с анимациями</li>
+                    <li>HUD + Keystrokes + Coords</li>
+                    <li>Trails + Particles + Custom Crosshair</li>
+                </ul>
+            </div>
+
+            <div class="feature-card">
+                <h3>🛡️ AntiCheat Bypass</h3>
+                <ul style="opacity:0.9; padding-left:1.2rem; line-height:1.8;">
+                    <li>Хороший обход большинства античитов</li>
+                    <li>Packet Control + AntiBan</li>
+                    <li>Регулярные обновления</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ПОД КАКИЕ СЕРВЕРА -->
+    <section class="servers">
+        <h2>Под какие сервера можно настроить Catlean</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Анархии / Semi-Anarchy</h3>
+                <p>2b2t, 9b9t, Constantiam и другие анархии — отлично работают Mace Killer, Flight, Scaffold и KillAura.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Гриферские сервера</h3>
+                <p>Любые сервера с возможностью грифинга. Сильные Scaffold + Reach + KillAura.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Мини-игры (SkyWars, BedWars)</h3>
+                <p>Хорошо настроенный KillAura, Reach и FastPlace дают большое преимущество.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Survival / SMP сервера</h3>
+                <p>Можно использовать более скрытные функции: Scaffold, AutoFarm, ESP, AntiAFK.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Платные / Приватные сервера</h3>
+                <p>Легко настраивается под конкретный античит (NCP, AAC, Spartan, Matrix, Grim и др.).</p>
+            </div>
+            <div class="feature-card">
+                <h3>Ванильные / Paper / Spigot</h3>
+                <p>Хорошая совместимость с большинством серверов.</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:3rem; opacity:0.8; font-size:1.1rem;">
+            Catlean легко настраивается под любой сервер — просто меняй настройки модулей под античит и правила.
+        </p>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="download-section" id="download-section">
+        <h2>Готовы доминировать в Minecraft?</h2>
+        <p style="font-size: 1.4rem; margin-bottom: 2rem;">
+            Catlean v2.8.4 — 1.21.11 Fabric
+        </p>
+        <button class="btn download-btn" onclick="downloadCheat()">
+            ⬇️ Скачать Catlean
+        </button>
+        <p style="margin-top: 2.5rem; opacity: 0.85;">
+            • Только Fabric Loader<br>
+            • Размер ≈ 14 МБ<br>
+            • Обновлено: Июль 2026
+        </p>
+    </section>
+
+    <div class="scroll-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function downloadCheat() {
+            const link = document.createElement('a');
+            link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent('Catlean Cheat 1.21.11 Fabric\n\nСпасибо за выбор Catlean!');
+            link.download = 'catlean-1.21.11-fabric.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            alert('✅ Файл начал скачиваться!\nУдачной игры на Catlean!');
+        }
+    </script>
+</body>
+</html>
